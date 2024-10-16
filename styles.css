@@ -257,13 +257,12 @@ nav a:hover {
 .social-icons a {
     color: var(--c_txt);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px; /* Increase this to make the icons larger */
 }
 
 .social-icons a:hover {
-    color: #0056b3; /* #1abc9c; /* Change to a new hover color */
-    border-bottom: none;
-    font-size: 21px;
+    color: #0056b3; /* Change to a new hover color */
+    font-size: 31px; /* Slightly increase the size on hover */
 }
 
 
