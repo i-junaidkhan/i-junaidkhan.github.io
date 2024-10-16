@@ -713,3 +713,85 @@ Mobile Friendly
         margin: 3em 0; /* Adjust margins */
     }
 }
+
+
+
+/* Container Styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Research Interests Section */
+.interests h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.research-interests {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.interest-item {
+    text-align: center;
+    margin: 20px;
+}
+
+.interest-item img {
+    width: 150px; /* Adjust the size of the research interest images */
+    height: auto;
+}
+
+.interest-item p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* Collaboration Section */
+.collaboration {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.collaboration h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Logo Carousel */
+.logo-carousel {
+    overflow: hidden; /* Hides the logos that go out of view */
+    white-space: nowrap; /* Prevents the logos from wrapping to the next line */
+    margin-top: 20px;
+}
+
+.logos {
+    display: inline-block;
+    animation: scroll 10s linear infinite; /* Animation to make the logos scroll */
+}
+
+.logos img {
+    width: 100px; /* Adjust logo size */
+    height: auto;
+    margin: 0 20px; /* Space between logos */
+    opacity: 0.8;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logos img:hover {
+    transform: scale(1.1); /* Slight zoom-in effect on hover */
+    opacity: 1;
+}
+
+/* Scrolling Animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
