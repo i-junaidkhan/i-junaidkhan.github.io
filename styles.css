@@ -101,9 +101,7 @@ a:hover {
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-a:visited {
-    /* Optional visited link color */
-}
+
 
 a:active {
     color: #e74c3c; /* Color for active links */
@@ -247,80 +245,4 @@ nav a:hover {
 
 .bio, .news, .interests, .publications, .awards, .contact {
     margin: 2em 0;
-}
-
-/* Collaboration Section */
-.collaboration {
-    margin-top: 50px;
-    text-align: center;
-}
-
-.collaboration h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.logo-carousel {
-    overflow: hidden;
-    white-space: nowrap;
-    margin-top: 20px;
-}
-
-.logos {
-    display: inline-block;
-    animation: scroll 10s linear infinite;
-}
-
-.logos img {
-    width: 100px;
-    height: auto;
-    margin: 0 20px;
-    opacity: 0.8;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.logos img:hover {
-    transform: scale(1.1);
-    opacity: 1;
-}
-
-/* Scrolling Animation */
-@keyframes scroll {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-/* Additional mobile-friendly styles */
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        width: 60%;
-        background: #2c3e50;
-        padding: 2em 1em;
-        position: absolute;
-        top: 100%;
-        z-index: 100;
-    }
-
-    nav.active ul {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: flex;
-        cursor: pointer;
-        padding: 0.5em;
-    }
-
-    .bar {
-        height: 3px;
-        width: 25px;
-        background: white;
-        margin: 3px 0;
-    }
 }
