@@ -101,9 +101,6 @@ a:hover {
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-a:visited {
-    /* Optional visited link color */
-}
 
 a:active {
     color: #e74c3c; /* Color for active links */
@@ -249,16 +246,55 @@ nav a:hover {
     margin: 2em 0;
 }
 
-/* Collaboration Section */
-.collaboration {
-    margin-top: 50px;
+
+.research-interests {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Aligns items in the center horizontally */
+    margin-top: 30px;
+  }
+
+.interest-item {
+    padding: 10px;
+/*    background-color: #f9f9f9;*/
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease;
+  }
+
+  .interest-item:hover {
+    transform: translateY(-5px); /* Lift on hover */
+  }
+
+  .interest-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50% /* 8px; */
+  }
+
+  .interest-item p {
+    width: 160px;
+    margin-top: 10px;
+    font-size: 1.0em;
+    color: #333;
+  }
+
+
+
+footer {
     text-align: center;
+/*    margin: 2em 0;*/
+    margin: 4em 0; /* Increase top margin */
+    font-size: 0.9em;
+    color: #777;
 }
 
-.collaboration h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
+
+
+
+
+
 
 .logo-carousel {
     overflow: hidden;
