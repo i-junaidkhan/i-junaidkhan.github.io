@@ -1,87 +1,198 @@
-﻿.experience-main {
-    width: 100%;
-  }
-  
-  .basic-experience {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  
-  .experience-heading-div {
-    display: flex;
-  }
-  
-  .experience-heading-div > * {
-    flex: 1;
-  }
-  
-  .experience-heading-img-div {
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .experience-heading-text-div {
-    text-align: center;
-  }
-  
-  .experience-heading-img-div > * {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .experience-heading-text {
-    font-size: 56px;
-    font-weight: 400;
-    font-family: "Google Sans Medium";
-    line-height: 1.1;
-    text-align: center;
-    margin-top: 80px;
-  }
-  
-  .experience-heading-sub-text {
-    font-size: 30px;
-    font-family: "Google Sans Regular";
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  .experience-header-detail-text {
-    font-size: 20px;
-    line-height: 30px;
-    margin-top: 0px;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-family: "Google Sans Medium";
-  }
-  
-  @media (max-width: 1380px) {
-    .experience-heading-text {
-      font-size: 50px;
-      margin-top: 80px;
-    }
-    .experience-heading-sub-text {
-      font-size: 25px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .experience-heading-text {
-      font-size: 30px;
-      margin-top: 20px;
-    }
-  
-    .experience-heading-sub-text {
-      font-size: 20px;
-    }
-  
-    .experience-heading-div {
-      flex-direction: column;
-    }
-  
-    .experience-header-detail-text {
-      font-size: 16px;
-      margin-right: 0px;
-      line-height: normal;
+﻿* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5em;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 0.5em 0em 0em 0em; /* Margin above and below each container */
+  padding: 2em 5em 1em 5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+nav {
+  background: #2c3e50;
+  padding: 1em 2em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-left {
+  margin-left: 20px;
+}
+
+.name-header {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 2em;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav a {
+  font-size: 1.1em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Container for the entire section */
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ================================================================  */
+/*    Experience                                                 */
+/* ================================================================  */
+
+
+/* Align logo and university name side by side */
+.experience-header {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Add some space between the logo and the name */
+  margin-bottom: 20px; /* Add spacing below the header */
+}
+
+/* Logo styling */
+.experience-header img {
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px; /* Optional: slight rounding of image corners */
+}
+
+/* University name styling */
+.university-name h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0; /* Remove margin */
+}
+
+/* Details about supervisor duties and responsibilities */
+.experience-item-text {
+  margin-top: 10px; /* Add some spacing from the name */
+}
+
+.experience-item-text p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Style the lists for duties and responsibilities */
+.experience-item-text ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* Ensure both headings have the same style */
+.experience-item-text strong {
+  font-size: 1em; /* Adjust the size as needed */
+  font-weight: bold; /* Make both headings bold */
+  color: #2c3e50; /* Dark color for both headings */
+  display: block; /* Ensure the strong elements appear as block-level elements */
+  margin-bottom: 10px; /* Add spacing below headings */
+}
+
+
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+  .experience-header {
+      flex-direction: column; /* Stack logo and name vertically on smaller screens */
       text-align: center;
-    }
   }
+
+  .experience-header img {
+      width: 120px; /* Smaller logo size for mobile */
+  }
+
+  .university-name h3 {
+      font-size: 1.5em;
+  }
+}
+/* ================================================================  */
+
+footer {
+  text-align: center;
+/*    margin: 2em 0;*/
+  margin: 4em 0; /* Increase top margin */
+  font-size: 0.9em;
+  color: #777;
+}
+
+
+
+
+
+
