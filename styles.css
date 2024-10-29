@@ -114,6 +114,23 @@ ul li {
     margin-bottom: 6px;
 }
 
+
+
+.header-left {
+    margin-left: 20px;
+}
+
+.name-header {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+/* ================================================================  */
+/*    Navigation                                                 */
+/* ================================================================  */
+
 nav {
     background: #2c3e50;
     padding: 1em 2em;
@@ -125,16 +142,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.header-left {
-    margin-left: 20px;
-}
-
-.name-header {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #ffffff;
 }
 
 nav ul {
@@ -149,15 +156,161 @@ nav ul {
 }
 
 nav a {
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: #ffffff;
     text-decoration: none;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Hover effect: darken the background of the tab when hovered */
 nav a:hover {
-    text-decoration: underline;
+    background-color: #1b2a38; /* Darker background on hover */
     color: #ffffff;
+    border-radius: 4px; /* Rounded corners for the tabs */
 }
+
+/* Style for the active tab */
+nav a.active {
+    background-color: #0056b3; /* Darker background for the active tab */
+    color: #ffffff;
+    border-radius: 4px; /* Rounded corners for the active tab */
+}
+/*---------------------------------------------------*/
+
+
+/* ================================================================  */
+/*    Experience                                                 */
+/* ================================================================  */
+
+
+/* Align logo and university name side by side */
+.experience-header {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Add some space between the logo and the name */
+    margin-bottom: 20px; /* Add spacing below the header */
+  }
+  
+  /* Logo styling */
+  .experience-header img {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px; /* Optional: slight rounding of image corners */
+  }
+  
+  /* University name styling */
+  .university-name h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0; /* Remove margin */
+  }
+  
+  /* Details about supervisor duties and responsibilities */
+  .experience-item-text {
+    margin-top: 10px; /* Add some spacing from the name */
+  }
+  
+  .experience-item-text p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Style the lists for duties and responsibilities */
+  .experience-item-text ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  /* Ensure both headings have the same style */
+  .experience-item-text strong {
+    font-size: 1em; /* Adjust the size as needed */
+    font-weight: bold; /* Make both headings bold */
+    color: #2c3e50; /* Dark color for both headings */
+    display: block; /* Ensure the strong elements appear as block-level elements */
+    margin-bottom: 10px; /* Add spacing below headings */
+  }
+  
+  
+  /* Responsive design for mobile screens */
+  @media (max-width: 768px) {
+    .experience-header {
+        flex-direction: column; /* Stack logo and name vertically on smaller screens */
+        text-align: center;
+    }
+  
+    .experience-header img {
+        width: 120px; /* Smaller logo size for mobile */
+    }
+  
+    .university-name h3 {
+        font-size: 1.5em;
+    }
+  }
+  /* ================================================================  */
+  
+/* ================================================================  */
+/*    Research                                                 */
+/* ================================================================  */
+
+
+/* Align logo and university name side by side */
+/* Research Section */
+.research-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between research items */
+    padding: 2em 0;
+}
+
+.research-item {
+    display: flex; /* Align image and text side by side */
+    align-items: center;
+    gap: 20px; /* Space between image and text */
+}
+
+.research-item img {
+    width: 150px; /* Fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure image fits nicely */
+    border-radius: 5px; /* Optional: slight rounding of image corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.research-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #2c3e50; /* Dark color for heading */
+}
+
+.research-item p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555; /* Gray color for text */
+}
+
+.research-item-text {
+    flex: 1; /* Allow text to take remaining space */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .research-item {
+        flex-direction: column; /* Stack image and text vertically on smaller screens */
+        text-align: center; /* Center-align text */
+    }
+
+    .research-item img {
+        width: 100px; /* Adjust image size for smaller screens */
+        height: 100px;
+    }
+}
+
+  /* ================================================================  */
+  
 
 .menu-toggle {
     display: none;
@@ -309,10 +462,13 @@ footer {
 
 
 
+/* ================================================================  */
+/*    collaboration                                             */
+/* ================================================================  */
+
+
 
 /* Collaboration Section */
-
-
 .logo-carousel {
     overflow: hidden;
     white-space: nowrap;
@@ -322,6 +478,7 @@ footer {
 .logos {
     display: inline-block;
     animation: scroll 15s linear infinite;
+    animation-play-state: running; /* Default animation state is running */
 }
 
 .logos img {
@@ -332,8 +489,13 @@ footer {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+/* Stop animation when hovering over logos */
+.logos:hover {
+    animation-play-state: paused; /* Pause the animation when hovering */
+}
+
 .logos img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Slight zoom-in effect on hover */
     opacity: 1;
 }
 
@@ -346,6 +508,7 @@ footer {
         transform: translateX(-100%);
     }
 }
+
 
 /* Additional mobile-friendly styles */
 @media (max-width: 768px) {
