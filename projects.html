@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Junaid Ahmad Khan - Services</title>
+    <title>Projects - Junaid Ahmad Khan</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -30,49 +30,38 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="Research.html">Research</a></li>
             <li><a href="Publication.html">Publications</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
             <li><a href="Experience.html">Experience</a></li>
-            <li><a href=""class="active">Services</a></li>
+            <li><a href="Services.html">Services</a></li>
+            
         </ul>
     </nav>
     
     <main>
-        <!-- Container for Journals -->
-        <!-- Consider using <article> for each list item if service descriptions become more detailed. -->
         <div class="container">
-            <section id="journals" class="publications">
-                <h2>Journal Reviewer</h2>
-                <ol class="journal-list">
-                    <li>
-                        <b>ICT Express</b>.
-                    </li>
-                    <li>
-                        <b>Engineering Applications of Artificial Intelligence</b>.
-                    </li>
-                    <li>
-                        <b>IEEE Transactions on Consumer Electronics</b>.
-                    </li>
-                    <li>
-                        <b>IEEE Transactions on Intelligent Transportation Systems</b>.
-                    </li>
-                    
-                </ol>
+            <section id="projects-list" class="projects-list">
+                <h2>My Projects</h2>
+
+                <article class="project-item">
+                    <h3>Project Title 1</h3>
+                    <p>Brief description of the project, the problem it solves, and its impact. This project aimed to develop an innovative solution for X, addressing the critical challenge of Y, resulting in Z improvements.</p>
+                    <p><strong>Technologies Used:</strong> Python, Docker, TensorFlow, Scikit-learn</p>
+                    <p><strong>My Role:</strong> Led the development of the core machine learning module, implemented the data preprocessing pipeline, and contributed to the API design.</p>
+                    <p><a href="#">GitHub Repository</a> | <a href="#">Live Demo</a></p>
+                </article>
+
+                <article class="project-item">
+                    <h3>Project Title 2</h3>
+                    <p>Brief description of the project, the problem it solves, and its impact. This initiative focused on creating a secure platform for Z, tackling issues related to A, and ultimately enhancing user privacy by B%.</p>
+                    <p><strong>Technologies Used:</strong> JavaScript, React, Node.js, MongoDB, AWS</p>
+                    <p><strong>My Role:</strong> Developed the front-end user interface, designed and implemented the RESTful APIs, and managed the cloud deployment.</p>
+                    <p><a href="#">GitHub Repository</a> | <a href="#">Live Demo</a></p>
+                </article>
+                
+                <!-- Add more project items as needed -->
+                <!-- Accessibility Note: Further checks for color contrast (WCAG AA) and comprehensive keyboard navigation are recommended. -->
             </section>
         </div>
-    
-        <!-- Container for Conferences -->
-        <div class="container">
-            <section id="conferences" class="publications">
-                <h2>Conference Reviewer</h2>
-                <ol class="conference-list">
-                    <li>
-                        <b>IEEE International Conference on Communications (ICC)</b>.
-                    </li>
-                   
-                </ol>
-            </section>
-        </div>
-        <!-- Accessibility Note: Further checks for color contrast (WCAG AA) and comprehensive keyboard navigation are recommended. -->
     </main>
 
     <footer>
